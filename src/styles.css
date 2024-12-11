@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  .h1-regular{
+    font-size: 36px;
+  }
+  .h2-regular{
+    font-size: 30px;
+  }
+  .h3-regular{
+    font-size: 25px;
+  }
+  .h4-regular{
+    font-size: 21px;
+  }
+  .h5-regular{
+    font-size: 17px;
+  }
+  .h6-regular{
+    font-size: 14px;
+  }
+  .texto{
+    font-size: 14px;
+  }
+
+  .text-pequeño{
+    font-size: 12px;
+  }
+  .text-sm{
+    font-size: 10px;
+  }
+  .text-extra-sm{
+    font-size: 8px;
+  }
+}
