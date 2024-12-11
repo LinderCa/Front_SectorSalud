@@ -13,11 +13,10 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     CommonModule
   ],
-
   //exportamos los componentes para que sean utilizados en otras partes del programa
   exports:[
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ]
 })
 export class LayoutsModule { }

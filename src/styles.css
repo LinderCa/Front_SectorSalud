@@ -35,4 +35,12 @@
   .text-extra-sm{
     font-size: 8px;
   }
+
+  .p-lateral{
+    padding: 0 32px;
+  }
+
+  .alt-64{
+    height: 64px;
+  }
 }

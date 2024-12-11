@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { FeacturesRoutingModule } from '../Feactures/feactures-routing.module';
+import { LayoutsModule } from '../Layouts/layouts.module';
 
 
 //FEACTURE: funcionalidades especificas y vistas como home, about
@@ -13,7 +14,8 @@ import { FeacturesRoutingModule } from '../Feactures/feactures-routing.module';
   ],
   imports: [
     CommonModule,
-    FeacturesRoutingModule
+    FeacturesRoutingModule,
+    LayoutsModule,//Importacion del modulo que sera utilizado en mi modulo actual
   ],
   //Exportamos los modulos para el poryecto
   exports:[
