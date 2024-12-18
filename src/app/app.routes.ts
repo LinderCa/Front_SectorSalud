@@ -1,11 +1,17 @@
-import { Routes } from '@angular/router';
-
+import { Routes,RouterModule } from '@angular/router';
+import { MainComponent } from './Layouts/main/main.component';
+import { HomeComponent } from './pages/home/home/home.component';
 export const routes: Routes = [
-  //Registramos el modulo FeacturesModule
-    //--Para una carga diferida(Lazy loanding) se usa LoadChildren
+  //Cargamos las rutas
   {
-    path:'',
-    loadChildren:()=>
-      import('./Feactures/feactures.module').then((m)=>m.FeacturesModule),
-  }
+    path: '',
+    component: MainComponent,
+    children: [
+      {
+        path: '',
+        component:HomeComponent
+      },
+    ],
+  },
+
 ];

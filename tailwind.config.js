@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
+    //DISEÑO RESPONSIVO
+    screens:{
+      'md':'440px',
+      'lg':'1024px'
+    },
     //FUENTE DE TIPOGRAFIA
     fontFamily:{
       istokWeb: ['Istok Web','san-serif'],

@@ -43,4 +43,7 @@
   .alt-64{
     height: 64px;
   }
+  .p-lat-128{
+    padding: 0 128px;
+  }
 }
