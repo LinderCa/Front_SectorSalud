@@ -1,28 +1,60 @@
-<section class="bg-fourd-default">
-  <section class="flex flex-col justify-center items-center gap-10 ">
-    <!--PRIMERA CAJA-->
-    <a  class="w-[200px] h-[160px]  flex justify-center items-center flex-col group">
-      <!--SUB CAJA PARA LA IMAGEN,solo se muestra cuando exista un hover-->
-      <figure class="w-full h-[140px] hidden group-hover:flex opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <img src="../../../assets/imagenes/PersonalSalud.png" alt="" class="w-full h-full object-cover">
-      </figure>
-      <!--SUB CAJA QUE SE MUESTRA SIEMPRE-->
-      <div class="w-full h-full flex items-center bg-third-default group-hover:bg-second-default">
-        <div class="bg-primary-default w-2 h-full group-hover:bg-second-default"></div>
-        <p class="h2-regular text-primary-default font-bold text-center basis-full group-hover:text-fourd-default">Personal <br>Salud</p>
+<section class="alt-sm flex flex-col p-lateral py-10 items-center gap-10 md:p-0">
+  <article class="flex flex-col gap-5 md:hidden ">
+    <div class="text-center">
+      <h1 class="h3-regular font-bold text-primary-default md:h2-regular">CENTRO DE SALUD</h1>
+      <h3 class="h5-regular font-semibold text-second-_900 -m-2 md:h4-regular"> CIUDAD ETEN</h3>
+    </div>
+    <p class="text-center texto md:h5-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, illum porro? Officia, aliquam deleniti, sint quo nihil quod ut ea ad expedita alias, dicta esse consequatur laborum nostrum qui nulla?</p>
+  </article>
+    <!-- SLIDER DE IMÁGENES -->
+    <section class="hidden w-full h-[350px] overflow-hidden md:block lg:h-[450px]">
+      <!-- CONTENEDOR DE IMÁGENES -->
+      <div class="flex transition-transform duration-1000 ease-in-out animate-slider  w-full h-full ">
+        <figure class="w-full h-full   flex-shrink-0 ">
+          <img [src]="srcImagen_1" alt="Hospital 1" class="w-full h-full object-cover">
+        </figure>
+        <figure class="w-full flex-shrink-0">
+          <img [src]="srcImagen_2" alt="Hospital 2" class="w-full h-full object-cover">
+        </figure>
+        <figure class="w-full flex-shrink-0">
+          <img [src]="srcImagen_3" alt="Hospital 3" class="w-full h-full object-cover">
+        </figure>
       </div>
-    </a>
-    <!--SEGUNDA CAJA-->
-    <a href="" class="w-[200px] h-[160px] max-h-[240px] flex justify-center items-center flex-col group">
-      <!--SUB CAJA PARA LA IMAGEN,solo se muestra cuando exista un hover-->
-      <figure class="w-full h-[140px] hidden group-hover:flex opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <img src="../../../assets/imagenes/PersonalSalud.png" alt="" class="w-full h-full object-cover">
+    </section>
+
+
+  <section class="flex flex-col gap-7 flex-1  w-full justify-center items-center md:flex-row">
+    <!--CAJA DE GESTANTE-->
+    <div class="flex group justify-center items-center relative h-[200px] w-[300px] overflow-hidden md:h-[300px] md:w-[400px]">
+      <!-- Imagen con hover animado -->
+      <figure
+        class="h-full w-full transform transition-all duration-300 ease-in-out group-hover:scale-90 group-hover:-translate-y-1">
+        <img [src]="srcGestante" alt="" class="w-full h-full object-contain">
       </figure>
-      <!--SUB CAJA QUE SE MUESTRA SIEMPRE-->
-      <div class="w-full h-full flex items-center bg-third-default group-hover:bg-second-default">
-        <p class="h2-regular text-primary-default font-bold text-center basis-full group-hover:text-fourd-default">Gestante</p>
-        <div class="bg-primary-default w-2 h-full group-hover:bg-second-default"></div>
-      </div>
-    </a>
+      <!-- Información al hacer hover -->
+      <section
+        class="absolute top-0 left-0 w-full h-full  opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end items-center pb-5">
+        <p class="texto  mb-3 text-center px-5 md:px-20">Ingrese con sus credenciales de la Gestante</p>
+        <button class="bg-primary-default text-fourd-default px-4 rounded py-1 hover:bg-primary-dark">
+          <a href="">INGRESAR</a>
+        </button>
+      </section>
+    </div>
+    <!--CAJA DE PERSONAL DE SALUD-->
+    <div class="flex group justify-center items-center relative h-[200px] w-[300px] overflow-hidden md:h-[300px] md:w-[400px]">
+      <!-- Imagen con hover animado -->
+      <figure
+        class="h-full w-full transform transition-all duration-300 ease-in-out group-hover:scale-90 group-hover:-translate-y-1">
+        <img [src]="srcPersonal" alt="" class="w-full h-full object-contain">
+      </figure>
+      <!-- Información al hacer hover -->
+      <section
+        class="absolute top-0 left-0 w-full h-full  opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end items-center pb-5">
+        <p class="texto  mb-3 text-center px-5 md:px-20">Ingrese con sus credenciales del Personal de Salud</p>
+        <a class="bg-primary-default text-fourd-default px-4 rounded py-1 hover:bg-primary-dark" >
+          <a [routerLink]="['/Login']" >INGRESAR</a>
+        </a>
+      </section>
+    </div>
   </section>
 </section>

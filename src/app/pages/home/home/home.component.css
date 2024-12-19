@@ -1,0 +1,23 @@
+.alt-sm{
+  height: calc(100vh - 64px - 145px);
+}
+
+/* Animación del slider */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-slider {
+  animation: slide 9s infinite;
+}
